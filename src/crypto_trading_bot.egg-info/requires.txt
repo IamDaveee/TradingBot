@@ -1,0 +1,16 @@
+httpx<1.0,>=0.27
+websockets<16,>=14
+pydantic<3.0,>=2.10
+pydantic-settings<3.0,>=2.7
+python-dotenv<2.0,>=1.0
+PyYAML<7.0,>=6.0
+structlog<26.0,>=24.4
+pyarrow<25,>=20
+tzdata<2027,>=2025.2
+
+[dev]
+pytest<9.0,>=8.3
+pytest-asyncio<1.0,>=0.25
+ruff<1.0,>=0.9
+mypy<2.0,>=1.14
+types-PyYAML<7.0,>=6.0

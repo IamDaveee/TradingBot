@@ -1,0 +1,21 @@
+Metadata-Version: 2.4
+Name: crypto-trading-bot
+Version: 0.1.0
+Summary: Event-driven cryptocurrency market-data and automated trading platform
+Requires-Python: <3.14,>=3.13
+Description-Content-Type: text/markdown
+Requires-Dist: httpx<1.0,>=0.27
+Requires-Dist: websockets<16,>=14
+Requires-Dist: pydantic<3.0,>=2.10
+Requires-Dist: pydantic-settings<3.0,>=2.7
+Requires-Dist: python-dotenv<2.0,>=1.0
+Requires-Dist: PyYAML<7.0,>=6.0
+Requires-Dist: structlog<26.0,>=24.4
+Requires-Dist: pyarrow<25,>=20
+Requires-Dist: tzdata<2027,>=2025.2
+Provides-Extra: dev
+Requires-Dist: pytest<9.0,>=8.3; extra == "dev"
+Requires-Dist: pytest-asyncio<1.0,>=0.25; extra == "dev"
+Requires-Dist: ruff<1.0,>=0.9; extra == "dev"
+Requires-Dist: mypy<2.0,>=1.14; extra == "dev"
+Requires-Dist: types-PyYAML<7.0,>=6.0; extra == "dev"
