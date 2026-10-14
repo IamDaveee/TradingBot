@@ -1,0 +1,42 @@
+application:
+  name: crypto-trading-bot
+  environment: development
+
+exchange:
+  name: okx
+  mode: public
+  demo_trading: true
+  rest_base_url: https://www.okx.com
+  public_websocket_url: wss://ws.okx.com:8443/ws/v5/public
+
+market_data:
+  market_data:
+  symbols:
+    - BTC-USDT
+    - ETH-USDT
+    - SOL-USDT
+
+  channels:
+    - tickers
+
+  stale_after_seconds: 10
+  health_check_interval_seconds: 5
+  initial_reconnect_delay_seconds: 1
+  maximum_reconnect_delay_seconds: 30
+
+trading:
+  enabled: false
+  live_trading_enabled: false
+
+storage:
+  enabled: true
+  directory: data/raw/tickers
+  processed_directory: data/processed/tickers
+  candle_directory: data/processed/candles
+  flush_every_records: 10
+  queue_max_size: 10000
+  shutdown_timeout_seconds: 10
+
+logging:
+  level: INFO
+  json_output: false
